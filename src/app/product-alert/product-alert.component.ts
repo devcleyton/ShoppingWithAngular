@@ -9,6 +9,7 @@ import { Product } from '../products';
 export class ProductAlertComponent implements OnInit {
 
   @Input() product: Product | undefined;
+  @Input() name: string | undefined;
   @Output() notify = new EventEmitter();
 
   constructor() { }
